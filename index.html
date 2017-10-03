@@ -1,88 +1,96 @@
-	<!doctype html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Georges Abitbol</title>
-		<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="fr">
 
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Georges Abitbol</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-	<body>
-		<header> <!-- contient l'image, le titre et la barre de navigation -->
-			<h1>Georges Abitbol</h1>
-			<span>portfolio</span>
-			<img src="#" alt="Goerges Abitbol portfolio" width="X" height="Y"/>
-			<a href="#" title="retour à l'accueil"> </a>
+    <body>
+        <header> <!-- contient l'image en background (css), le titre et la barre de navigation -->
+            <h1>Georges Abitbol<span>portfolio</span></h1>
 
-				<nav id="navigation">
-					<ul>
-						<li><a href="adressepageCV" title="Accéder à mon profil">CV</a></li>
-						<li><a href="adressepageréalisations" title="Voir mes réalisations">Réalisations</a></li>
-						<li><a href="adressepagecontacts" title="Contactez-moi">Contacts</a></li>
-						<li><a href="adressepageblog" title="Voir les dernières actualités">Blog</a></li>
-									</ul>
-								</nav>
-							</header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#me" title="Accéder à mon profil">CV</a></li>
+                    <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
+                    <li><a href="#contact" title="Contactez-moi">Contacts</a></li>
+                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-		<div id="main"> <!-- contient le slide/bloc media et le bloc CV-->
-				<h2>Mes réalisations</h2>	
-				<a href="#" title="Voir mes réalisations"></a>
-				<div class="slide_realisations">
-					<img src="#" alt="Réalisation n°1" width="X" height="Y"/>
-					<a href="#" title="Réalisation n°1"> </a>
-					<img src="#" alt="Réalisation n°2" width="X" height="Y"/>
-					<a href="#" title="Réalisation n°2"> </a>
-					<img src="#" alt="Réalisation n°3" width="X" height="Y"/>
-					<a href="#" title="Réalisation n°3"> </a>
-					<div class="arrow-left">Précédent</div>
-					<div class="arrow-right">Suivant</div>
-				</div>	
-				
-				<h2>QUI suis-je ?</h2>
-				<a href="#" title="Accéder à mon profil"></a>
-				<div class="bloc_CV">
-	                <img src="#" alt="Goerges Abitbol" width="X" height="Y"/>
-	                <h3>Georges Abitbol</h3>
-	                <h4>Développeur informatique</h4>
-	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque magna turpis, ac tincidunt sem posuere ac. Proin semper justo molestie dictum accumsan. Nunc tristique quis ligula vitae aliquet. Phasellus varius semper egestas.</p> 
-	                <img src="#" alt="Suivez-moi sur Facebook !" width="X" height="Y"/>
-	                <a href="#" title="Bouton Facebook"></a> 
-	                <img src="#" alt="Suivez-moi sur LinkedIn" width="X" height="Y"/>
-	                <a href="#" title="Bouton LinkedIn"></a> 
-	                <img src="#" alt="Suivez-moi sur Twitter" width="X" height="Y"/>
-	                <a href="#" title="Bouton Twitter"></a> 
-				</div>
-		</div>
+        <section id="projects">
+            <h2><a href="#" title="Mes réalisations">Mes réalisations</a></h2>
+            <div>
+                <article>
+                    <a href="#" Title="Réalisation exemple 1"><img src="" alt=""></a>
+                    <!-- In Fine, toute la surface de cette div sera "cliquable" et renverra au projet mis en avant. En attendant la surcouche JS j'englobe mon <h3> et mon <p> dans un lien <a> pour protoyper cette action -->
+                    <div>
+                        <a href="#" title="ABCD Project"><h3>ABCD Project</h3> <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p></a>
+                    </div>
+                </article>
+                <div id="arrow-left">
+                    <a><img src="" alt="Flèche gauche"></a>
+                </div>
+                <div id="arrow-right">
+                    <a><img src="" alt="Flèche droite"></a>
+                </div>
+            </div>
+        </section>
 
-<!--bloc de news -->
-		<div class="bloc_news">
-			<H2>Dernières publications</H2>
-			<hr width="30%" />
-			<div class="news1">
-				<h5>Titre news1</h5>
-				<p>Teaser news1</p>
-				<p>Tags</p>
-			</div>
-			<hr width="30%" />
-			<div class="news2">
-				<h5>Titre news2</h5>
-				<p>Teaser news2</p>
-				<p>Tags</p>
-			</div>
-			<hr width="30%" />
-			<div class="news2">
-				<h5>Titre news2</h5>
-				<p>Teaser news2</p>
-				<p>Tags</p>
-			</div>
-			<p id="read_more">
-				<a href="#" title="Voir les dernières actualités">Lire plus sur mon blog</a>
-			</p>
-		</div>
+        <section id="about">
+            <h2><a href="#" title="A mon propos">Qui suis-je ?</a></h2>
+            <article>
+                <div>
+                    <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait">
+                </div>
+                <div>
+                    <h3>Georges Abitbol <span>Développeur informatique</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque magna turpis, ac tincidunt sem posuere ac. Proin semper justo molestie dictum accumsan. Nunc tristique quis ligula vitae aliquet. Phasellus varius semper egestas.</p>
+                    <ul>
+                        <li><a href="#" title="Bouton Facebook"><img src="#" alt="Suivez-moi sur Facebook !"></a></li>
+                        <li><a href="#" title="Bouton LinkedIn"><img src="#" alt="Suivez-moi sur LinkedIn"></a></li>
+                        <li><a href="#" title="Bouton Twitter"><img src="#" alt="Suivez-moi sur Twitter"></a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
 
-		
-<footer id="footer"> <!-- on pourrait peut-être ajouter une barre de nav dans le footer -->
-	<p>crédits et mentions légales</p>
-</footer>
-	</body>
-	</html>
+        <section id="blog">
+            <h2><a href="#" title="Mes dernière publications">Dernières publications</a></h2>
+            <!--l'image du <hr> sera encodée en CSS https://css-tricks.com/using-svg/#article-header-id-13-->
+            <hr>
+            <!-- l'ensemble de l'article sera "cliquable" après ajout de JS-->
+            <article>
+                <p>Dimanche 01 octobre</p>
+                <h2><a href="#" title="Article du 1er octobre">Ceci est un titre long pour une brève qui est longue.</a></h2>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
+                <p><a href="#" title="Tag1">Tag1</a>, <a href="#" title="Tag2">Tag2</a>, <a href="#" title="Encore un tag">Encore un tag</a></p>
+                <hr>
+            </article>
+            <article>
+                <p>Samedi 30 septembre</p>
+                <h2><a href="#" title="Article du 30 septembre">Ceci est un titre</a></h2>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long.</p>
+                <p><a href="#" title="Tag1">Tag1</a>, <a href="#" title="Tag2">Tag2</a>, <a href="#" title="Encore un tag">Encore un tag</a></p>
+                <hr>
+            </article>
+            <article>
+                <p>Dimanche 29 septembre</p>
+                <h2><a href="#" title="Article du 29 septembre">Ceci est un titre long pour une brève qui est longue.</a></h2>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
+                <p><a href="#" title="Tag1">Tag1</a>, <a href="#" title="Tag2">Tag2</a>, <a href="#" title="Encore un tag">Encore un tag</a></p>
+                <hr>
+            </article>
+
+            <p>
+                <a href="#" class="button" title="Voir les dernières actualités">Lire plus sur mon blog</a>
+            </p>
+        </section>
+        <footer>
+            <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
+        </footer>
+    </body>
+</html>
