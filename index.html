@@ -4,39 +4,45 @@
     <head>
         <meta charset="utf-8">
         <title>Georges Abitbol</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css" media="all">
+        <link rel="stylesheet" href="style.css" media="all">
     </head>
 
     <body>
-        <header> <!-- contient l'image en background (css), le titre et la barre de navigation -->
-            <h1>Georges Abitbol<span>portfolio</span></h1>
-
+        <header>
+            <div class="vertical-align-container">
+                <div class="title vertical-align-box box-center">
+                    <h1>Georges Abitbol<span>portfolio</span></h1>
+                </div>
+            </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#me" title="Accéder à mon profil">CV</a></li>
                     <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
-                    <li><a href="#contact" title="Contactez-moi">Contacts</a></li>
+                    <li><a href="#contact" title="Contactez-moi">Contact</a></li>
                     <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="projects">
+        <section id="projects" class="box-center container">
             <h2><a href="#" title="Mes réalisations">Mes réalisations</a></h2>
-            <div>
+            <div class="slider clearfix">
                 <article>
-                    <a href="#" Title="Réalisation exemple 1"><img src="" alt=""></a>
                     <!-- In Fine, toute la surface de cette div sera "cliquable" et renverra au projet mis en avant. En attendant la surcouche JS j'englobe mon <h3> et mon <p> dans un lien <a> pour protoyper cette action -->
-                    <div>
-                        <a href="#" title="ABCD Project"><h3>ABCD Project</h3> <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p></a>
+                    <div class="vertical-align-container">
+                        <a href="#" title="ABCD Project" class="vertical-align-box">
+                            <h3>ABCD Project</h3>
+                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                        </a>
                     </div>
                 </article>
-                <div id="arrow-left">
+                <!--<div id="arrow-left">
                     <a><img src="" alt="Flèche gauche"></a>
                 </div>
                 <div id="arrow-right">
                     <a><img src="" alt="Flèche droite"></a>
-                </div>
+                </div>-->
             </div>
         </section>
 
