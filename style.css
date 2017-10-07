@@ -14,19 +14,21 @@ body {
 h2 {
     text-align: center;
     padding: 2em 0 2em 0;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h2 a {
     font-size: 40px;
     text-decoration: none;
     color: #95989A;
-
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h3 a {
     font-size: 38px;
     text-decoration: none;
     color: #95989A;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .container {
@@ -54,12 +56,14 @@ h1 {
     font-size: 70px;
     display: inline-block;
     color: lightgrey;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h1 span {
     display: block;
     text-align: right;
     font-size: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .title {
@@ -72,6 +76,7 @@ nav {
     position: absolute;
     width: 100%;
     bottom: 0;
+    font-family: 'Dosis', sans-serif;
 }
 
 nav ul {
@@ -142,12 +147,14 @@ header {
 #projects article h3 {
     font-size: 25px;
     text-align: left;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 #projects article p {
     text-align: justify;
     font-size: 19px;
     line-height: 1.5;
+    font-family: 'Dosis', sans-serif;
 }
 
 /* About me
@@ -161,6 +168,7 @@ header {
 #about article {
     border: 1px solid lightgrey;
     background-color: white;
+    font-family: 'Dosis', sans-serif;
 }
 #about article > div {
     float: right;
@@ -169,12 +177,14 @@ header {
 
 #about h3 {
     font-size: 25px;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 #about span {
     display: block;
     font-size: 21px;
     text-align: left;
+    font-family: 'Raleway', sans-serif;
 }
 
 .bio-wrapper {
@@ -206,6 +216,7 @@ header {
 
 #blog {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 /**
@@ -227,6 +238,7 @@ hr {
 .tag {
     text-decoration: none;
     color: lightgrey;
+    font-family: 'Raleway', sans-serif;
 }
 
 .button
@@ -243,6 +255,7 @@ hr {
 #blog > p {
     text-align: right;
     padding-top: 2em;
+    font-family: 'Dosis', sans-serif;
 }
 
 button:hover,
@@ -260,6 +273,7 @@ footer {
     padding: 0.5em;
     text-align: right;
     background-color: white;
+    font-family: 'Dosis', sans-serif;
 }
 
 footer a {
