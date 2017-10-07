@@ -8,11 +8,25 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #f9f9f9;
+}
+h2 {
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+
 h2 a {
     font-size: 40px;
     text-decoration: none;
     color: #95989A;
 
+}
+
+h3 a {
+    font-size: 38px;
+    text-decoration: none;
+    color: #95989A;
 }
 
 .container {
@@ -55,21 +69,30 @@ h1 span {
 nav {
     text-align: center;
     background-color: rgba(0,0,0,0.7);
-    padding: 1.5em;
     position: absolute;
     width: 100%;
     bottom: 0;
 }
 
+nav ul {
+    margin: 0;
+}
+
 nav ul li {
     display: inline-block;
+    padding: 0 3em 0 3em;
 }
 
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 7em;
     color: lightgrey;
+    display: block;
+    text-align: center;
+    padding: 2em;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
 }
 
 header {
@@ -84,10 +107,6 @@ header {
 
 /* Réalisation
 ==================================================================================*/
-
-h2 {
-    text-align: center;
-}
 
 .slider {
     position: relative;
@@ -129,4 +148,121 @@ h2 {
     text-align: justify;
     font-size: 19px;
     line-height: 1.5;
+}
+
+/* About me
+=======================================================================================*/
+
+.portrait {
+    width: 470px;
+    float: left;
+}
+
+#about article {
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+#about article > div {
+    float: right;
+    width: 698px;
+}
+
+#about h3 {
+    font-size: 25px;
+}
+
+#about span {
+    display: block;
+    font-size: 21px;
+    text-align: left;
+}
+
+.bio-wrapper {
+    padding: 2em;
+}
+
+.bio-wrapper p {
+    padding: 2em;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+#about li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2em 0 0;
+}
+
+#about ul {
+    text-align: center;
+}
+
+#about li img {
+    width: 57px;
+}
+
+/* News
+==============================================================================================================*/
+
+#blog {
+    text-align: center;
+}
+
+/**
+ * Embarquer du svg dans une css :
+ * 1- optimiser l'image svg avec https://jakearchibald.github.io/svgomg/
+ * 2- ouvrir le code du svg dans un éditeur, le coller dans https://www.mobilefish.com/services/base64/base64.php
+ * 3- utiliser la chaîne de caractères encodée résultant dans la propriété css background: url("data:image/svg+xml;base64,[monSVGEncodé]");
+ * Source : https://css-tricks.com/using-svg/#article-header-id-13
+ */
+hr {
+    height: 1.5em;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMTU1NDcuNzAzIiBoZWlnaHQ9IjI0NTEzLjIwNSIgdmlld0JveD0iMCAwIDgzLjQ4ODY2MyA2LjQ4NTc4NTUiPjxnIHN0cm9rZT0iIzAwMCI+PHBhdGggZD0iTTAgMy4yNDNoMzUuMDU1TTQ4LjQzNCAzLjI0M0g4My40OSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIuMjY1Ii8+PHBhdGggZmlsbD0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIuMjU3IiBkPSJNNDEuNzU0LjI2bDIuOTg0IDIuOTgzLTIuOTg0IDIuOTg0LTIuOTg0LTIuOTg0eiIvPjwvZz48L3N2Zz4=")
+}
+
+.tag {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.button
+{
+    background-color: white;
+    display: inline-block;
+    padding: .7em 1em;
+    text-decoration: none;
+    color: slategray;
+    border: 2px solid slategray;
+    border-radius: 1px;
+}
+
+#blog > p {
+    text-align: right;
+    padding-top: 2em;
+}
+
+button:hover,
+.button:hover
+{
+    color: white;
+    background-color: slategray;
+}
+
+/* Footer
+====================================================================================================*/
+footer {
+    border-top: 1px solid grey;
+    margin-top: 2.5em;
+    padding: 0.5em;
+    text-align: right;
+    background-color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
 }
