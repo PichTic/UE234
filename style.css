@@ -133,49 +133,50 @@ header {
 /* Réalisation
 ==================================================================================*/
 
-.slider {
+/*.slider {
     position: relative;
     background-image: url(Images/abcdproject.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 518px;
-}
+}*/
 
-#arrow-left, #arrow-right {
+
+/*#arrow-left, #arrow-right {*/
+.owl-prev, .owl-next {
     position: absolute;
-    top: 45%;
+    top: -442px;
 }
 
-#arrow-left {
+.owl-prev {
     left : -50px;
 }
 
-#arrow-left img{
-        height: 40px;
+.owl-prev img{
+    height: 40px;
 }
 
-#arrow-right {
+.owl-next {
     right : -50px;
 }
 
-#arrow-right img {
+.owl-next img {
 
     height: 40px;
 }
 
 #projects article {
+    top: 0;
+    right: 0;
     width: 50%;
     height: 100%;
-    float: right;
+    position: absolute;
     background-color: rgba(0,0,0,0.7);
     text-align: center;
-    padding: 5em;
+    padding: 11em 5em 5em 5em;
+    color: lightgrey;
 }
 
-#projects article a {
-    color: lightgrey;
-    text-decoration: none;
-}
 
 #projects article h3 {
     font-size: 25px;
@@ -188,6 +189,30 @@ header {
     font-size: 19px;
     line-height: 1.5;
     font-family: 'Dosis', sans-serif;
+}
+
+.owl-carousel > div {
+    position: relative;
+}
+
+#projects article p.projet {
+    text-align: right;
+    margin-top : 2em;
+}
+
+#projects article p.projet a {
+    border: 1px solid white;
+    padding: 0.4em 0.7em;
+    display: inline-block;
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#projects article p.projet a:hover,
+#projects article p.projet a:focus,
+#projects article p.projet a:active{
+    color: black;
+    background-color: rgba(255,255,255,0.7);
 }
 
 /* About me

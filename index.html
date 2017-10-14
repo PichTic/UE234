@@ -1,5 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 
     <head>
         <meta charset="utf-8">
@@ -7,119 +7,153 @@
         <title>Georges Abitbol</title>
         <link rel="stylesheet" href="normalize.css" media="all">
         <link rel="stylesheet" href="style.css" media="all">
+        <link rel="stylesheet" href="owl.carousel.css" media="all">
+        <link rel="stylesheet" href="owl.theme.default.min.css" media="all">
         <style>
-        @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
-       </style>
-       
-</head>
+            @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
+        </style>
+    </head>
 
-<body>
-    <header>
-        <div class="vertical-align-container">
-            <div class="title vertical-align-box box-center">
-                <h1>Georges Abitbol<span>portfolio</span></h1>
+    <body>
+        <header>
+            <div class="vertical-align-container">
+                <div class="title vertical-align-box box-center">
+                    <h1>Georges Abitbol<span>portfolio</span></h1>
+                </div>
             </div>
-        </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="#me" title="Accéder à mon profil">CV</a></li>
-                <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
-                <li><a href="#contact" title="Contactez-moi">Contact</a></li>
-                <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#me" title="Accéder à mon profil">CV</a></li>
+                    <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
+                    <li><a href="#contact" title="Contactez-moi">Contact</a></li>
+                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="projects" class="box-center container">
-        <h2><a href="#" title="Mes réalisations">Mes réalisations</a></h2>
-        <div class="slider clearfix">
-            <article class="cycle-slideshow" datacycle-slides =".vertical-align-container">
-                <!-- In Fine, toute la surface de cette div sera "cliquable" et renverra au projet mis en avant. En attendant la surcouche JS j'englobe mon <h3> et mon <p> dans un lien <a> pour protoyper cette action -->
-                    <div class="vertical-align-container">
-                        <a href="#" title="ABCD Project" class="vertical-align-box">
-                            <img src="abcdproject.jpg"/>
+        <section id="projects" class="box-center container">
+            <h2><a href="#" title="Mes réalisations">Mes réalisations</a></h2>
+            <div class="owl-carousel">
+                <div>
+                    <img src="Images/abcdproject.jpg" alt="abcd project">
+                    <article>
                             <h3>ABCD Project</h3>
                             <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
-                        </a>
-                    </div>
-                    <div class="vertical-align-container">
-                        <a href="#" title="Odam Project" class="vertical-align-box">
-                            <img src="odamproject.jpg"/>
-                            <h3>ABCD Project</h3>
-                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
-                        </a>
-                    </div>
-                    <div class="vertical-align-container">
-                        <a href="#" title="Pink Sky Project" class="vertical-align-box">
-                            <img src="pinkskyproject.jpg"/>
-                            <h3>ABCD Project</h3>
-                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
-                        </a>
-                    </div>
-                </article>
-                <div id="arrow-left">
-                        <a><img src="Images/left.svg" alt="Flèche gauche"></a>
+                            <p class="projet">
+                                <a href="#1" title="ABCD Project">Voir le projet</a>
+                            </p>
+                    </article>
                 </div>
-                <div id="arrow-right">
-                        <a><img src="Images/right.svg" alt="Flèche droite"></a>
+                <div>
+                    <img src="Images/odamproject.jpg" alt="odam project">
+                    <article>
+                            <h3>Odam Project</h3>
+                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                            <p class="projet">
+                                <a href="#2" title="Odam Project">Voir le projet</a>
+                            </p>
+                    </article>
                 </div>
-         </div>
-    </section>
+                <div>
+                    <img src="Images/pinkskyproject.jpg" alt="pink sky project">
+                    <article>
+                            <h3>Pink Sky Project</h3>
+                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                            <p class="projet">
+                                <a href="#3" title="Pink Sky Project">Voir le projet</a>
+                            </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2><a href="#" title="A mon propos">Qui suis-je ?</a></h2>
+            <article class="box-center container clearfix">
+                <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait" class="portrait" >
+                <div>
+                    <div class="bio-wrapper">
+                        <h3>Georges Abitbol<span>Développeur informatique</span></h3>
 
-            <section id="about">
-                <h2><a href="#" title="A mon propos">Qui suis-je ?</a></h2>
-                <article class="box-center container clearfix">
-                    <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait" class="portrait" >
-                    <div>
-                        <div class="bio-wrapper">
-                            <h3>Georges Abitbol<span>Développeur informatique</span></h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque magna turpis, ac tincidunt sem posuere ac. Proin semper justo molestie dictum accumsan. Nunc tristique quis ligula vitae aliquet. Phasellus varius semper egestas.</p>
-                            <ul>
-                                <li><a href="#" title="Bouton Facebook"><img src="Images/Facebook.png" alt="Suivez-moi sur Facebook !"></a></li>
-                                <li><a href="#" title="Bouton LinkedIn"><img src="Images/Linkedin.png" alt="Suivez-moi sur LinkedIn"></a></li>
-                                <li><a href="#" title="Bouton Twitter"><img src="Images/Twitter.png" alt="Suivez-moi sur Twitter"></a></li>
-                            </ul>
-                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque magna turpis, ac tincidunt sem posuere ac. Proin semper justo molestie dictum accumsan. Nunc tristique quis ligula vitae aliquet. Phasellus varius semper egestas.</p>
+                        <ul>
+                            <li><a href="#" title="Bouton Facebook"><img src="Images/Facebook.png" alt="Suivez-moi sur Facebook !"></a></li>
+                            <li><a href="#" title="Bouton LinkedIn"><img src="Images/Linkedin.png" alt="Suivez-moi sur LinkedIn"></a></li>
+                            <li><a href="#" title="Bouton Twitter"><img src="Images/Twitter.png" alt="Suivez-moi sur Twitter"></a></li>
+                        </ul>
                     </div>
-                </article>
-            </section>
+                </div>
+            </article>
+        </section>
 
-            <section id="blog" class="box-center container">
-                <h2><a href="#" title="Mes dernière publications">Dernières publications</a></h2>
-                <!--l'image du <hr> sera encodée en CSS https://css-tricks.com/using-svg/#article-header-id-13-->
+        <section id="blog" class="box-center container">
+            <h2><a href="#" title="Mes dernière publications">Dernières publications</a></h2>
+            <!--l'image du <hr> sera encodée en CSS https://css-tricks.com/using-svg/#article-header-id-13-->
+            <hr>
+            <!-- l'ensemble de l'article sera "cliquable" après ajout de JS-->
+            <article class="scrollme animateme"
+                data-when="enter"
+                data-from="0.75"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="400"
+            >
+                <p>Dimanche 01 octobre</p>
+                <h3><a href="#" title="Article du 1er octobre">Ceci est un titre long pour une brève qui est longue.</a></h3>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
+                <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
                 <hr>
-                <!-- l'ensemble de l'article sera "cliquable" après ajout de JS-->
-                <article>
-                    <p>Dimanche 01 octobre</p>
-                    <h3><a href="#" title="Article du 1er octobre">Ceci est un titre long pour une brève qui est longue.</a></h3>
-                    <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
-                    <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
-                    <hr>
-                </article>
-                <article>
-                    <p>Samedi 30 septembre</p>
-                    <h3><a href="#" title="Article du 30 septembre">Ceci est un titre</a></h3>
-                    <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long.</p>
-                    <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
-                    <hr>
-                </article>
-                <article>
-                    <p>Dimanche 29 septembre</p>
-                    <h3><a href="#" title="Article du 29 septembre">Ceci est un titre long pour une brève qui est longue.</a></h3>
-                    <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
-                    <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
-                    <hr>
-                </article>
-                <p>
-                    <a href="#" class="button" title="Voir les dernières actualités">Lire plus sur mon blog</a>
-                </p>
-            </section>
-            <footer>
-                <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
-            </footer>
+            </article>
+            <article class="scrollme animateme"
+                data-when="enter"
+                data-from="0.75"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="-400"
+            >
+                <p>Samedi 30 septembre</p>
+                <h3><a href="#" title="Article du 30 septembre">Ceci est un titre</a></h3>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long.</p>
+                <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
+                <hr>
+            </article>
+            <article class="scrollme animateme"
+                data-when="enter"
+                data-from="0.75"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="400"
+            >
+                <p>Dimanche 29 septembre</p>
+                <h3><a href="#" title="Article du 29 septembre">Ceci est un titre long pour une brève qui est longue.</a></h3>
+                <p>Ceci est le teaser de la brève qui se doit d'être aussi un peu long, et qui va nous donner envie de lire l'article.</p>
+                <p><a href="#" title="Tag1" class="tag">Tag1</a>, <a href="#" title="Tag2" class="tag">Tag2</a>, <a href="#" title="Encore un tag" class="tag">Encore un tag</a></p>
+                <hr>
+            </article>
+            <p>
+                <a href="#" class="button" title="Voir les dernières actualités">Lire plus sur mon blog</a>
+            </p>
+        </section>
+        <footer>
+            <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
+        </footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="scripts/cycle2"></script>
-        </body>
-        </html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/jquery.scrollme.min.js"></script>
+        <script src="js/owlcarousel/dist/owl.carousel.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                margin: 10,
+                autoHeight: false,
+                navText: [ '<img src="Images/left.svg" alt="Flèche gauche">', '<img src="Images/right.svg" alt="Flèche droite">' ],
+                autoplay:true,
+                autowidth: true,
+                loop: true,
+                nav: true,
+                dots:false,
+                animateOut: 'fadeOut'
+            });
+
+        </script>
+    </body>
+</html>
