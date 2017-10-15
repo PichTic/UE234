@@ -75,6 +75,73 @@ h3 a {
     clear: both;
     display: block;
 }
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 681px;
+    }
+}
+
+.vertical-align-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.vertical-align-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content : '';
+    clear: both;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 454px;
+    }
+}
+
+.vertical-align-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.vertical-align-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content : '';
+    clear: both;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 363px;
+    }
+}
+
+.vertical-align-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.vertical-align-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content : '';
+    clear: both;
+    display: block;
+}
+
 /* Header
 ==============================================================================*/
 h1 {
@@ -143,6 +210,159 @@ header {
     position: relative;
 }
 
+@media screen and (max-width: 900px) {
+
+    #nav {
+            display: none;
+            visibility: hidden;
+    }
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 0 3em 0 3em;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: lightgrey;
+    display: block;
+    text-align: center;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+}
+#nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(234, 34, 34, 0.7);
+    color: rgba(234, 34, 34, 1);
+}
+
+header {
+    background-image: url(Images/Massif-MB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 50px;
+      display: inline-block;
+      color: lightgrey;
+      font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+  h1 span {
+      display: block;
+      text-align: right;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+    #nav {
+            display: none;
+            visibility: hidden;
+    }
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 0 3em 0 3em;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: lightgrey;
+    display: block;
+    text-align: center;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+}
+#nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(234, 34, 34, 0.7);
+    color: rgba(234, 34, 34, 1);
+}
+
+header {
+    background-image: url(Images/Massif-MB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 333px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 40px;
+      display: inline-block;
+      color: lightgrey;
+      font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+  h1 span {
+      display: block;
+      text-align: right;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+    #nav {
+            display: none;
+            visibility: hidden;
+    }
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 0 3em 0 3em;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: lightgrey;
+    display: block;
+    text-align: center;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+}
+#nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(234, 34, 34, 0.7);
+    color: rgba(234, 34, 34, 1);
+}
+
+header {
+    background-image: url(Images/Massif-MB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 266px;
+    position: relative;
+}
+
+
 @media screen and (max-width: 1023px) {
     header {
         background-image: url(Images/Massif-MB-mobi.jpg);
@@ -159,7 +379,53 @@ header {
     transition: 1.5s;
 }
 
+@media screen and (max-width: 900px) {
+    header {
+        background-image: url(Images/Massif-MB-mobi.jpg);
+        background-size: cover;
+        height: 263px;
+        position: relative;
+    }
+}
 
+.scrollfix-top {
+    height: 74px;
+    z-index: 5000;
+    background-color: rgba(0,0,0,0.9);
+    transition: 1.5s;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-image: url(Images/Massif-MB-mobi.jpg);
+        background-size: cover;
+        height: 173px;
+        position: relative;
+    }
+}
+
+.scrollfix-top {
+    height: 49px;
+    z-index: 5000;
+    background-color: rgba(0,0,0,0.9);
+    transition: 1.5s;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: url(Images/Massif-MB-mobi.jpg);
+        background-size: cover;
+        height: 140px;
+        position: relative;
+    }
+}
+
+.scrollfix-top {
+    height: 39px;
+    z-index: 5000;
+    background-color: rgba(0,0,0,0.9);
+    transition: 1.5s;
+}
 /*
 =============================== Nav Mobil ===================================*/
 
@@ -216,6 +482,144 @@ header {
 		list-style: none;
     }
 }
+
+@media screen and (max-width: 900px) {
+
+    #phone-button {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        text-align: right;
+    }
+
+    #phone-button p {
+        color: #ff0000;
+        border: 1px solid;
+        border-radius: 2px;
+        display: inline-block;
+        padding: .7em;
+        margin-right: 1em;
+        text-transform: uppercase;
+    }
+
+    .flex-item a {
+        width: 100%;
+        background-color: rgba(234, 34, 34, 0.7);
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    .flex-container {
+		display: -webkit-flex;
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+    }
+
+    .flex-item {
+		width: 100%;
+		text-align: center;
+		list-style: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #phone-button {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        text-align: right;
+    }
+
+    #phone-button p {
+        color: #ff0000;
+        border: 1px solid;
+        border-radius: 2px;
+        display: inline-block;
+        padding: .7em;
+        margin-right: 1em;
+        text-transform: uppercase;
+    }
+
+    .flex-item a {
+        width: 100%;
+        background-color: rgba(234, 34, 34, 0.7);
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    .flex-container {
+		display: -webkit-flex;
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+    }
+
+    .flex-item {
+		width: 100%;
+		text-align: center;
+		list-style: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #phone-button {
+        display: block;
+        visibility: visible;
+        width: 100%;
+        text-align: right;
+    }
+
+    #phone-button p {
+        color: #ff0000;
+        border: 1px solid;
+        border-radius: 2px;
+        display: inline-block;
+        padding: .7em;
+        margin-right: 1em;
+        text-transform: uppercase;
+    }
+
+    .flex-item a {
+        width: 100%;
+        background-color: rgba(234, 34, 34, 0.7);
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    .flex-container {
+		display: -webkit-flex;
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+    }
+
+    .flex-item {
+		width: 100%;
+		text-align: center;
+		list-style: none;
+    }
+}
+
+
+
 /* Réalisation
 ==================================================================================*/
 
@@ -314,7 +718,6 @@ header {
         width: 300px;
     }
 }
-
 #about article {
     border: 1px solid lightgrey;
     background-color: white;
@@ -323,6 +726,49 @@ header {
     float: right;
     width: 698px;
 }
+
+@media screen and (max-width: 900px) {
+    .portrait {
+        width: 214px;
+    }
+}
+#about article {
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+#about article > div {
+    float: right;
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .portrait {
+        width: 142px;
+    }
+}
+#about article {
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+#about article > div {
+    float: right;
+    width: 333px;
+}
+
+@media screen and (max-width: 480px) {
+    .portrait {
+        width: 114px;
+    }
+}
+#about article {
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+#about article > div {
+    float: right;
+    width: 266px;
+}
+
 
 @media screen and (max-width: 1280px) {
     #about article > div {
@@ -348,6 +794,78 @@ header {
     padding: 2em;
 }
 
+@media screen and (max-width: 900px) {
+    #about article > div {
+        width: 450px;
+        padding: 1em;
+    }
+}
+
+#about h3 {
+    font-size: 24px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: left;
+}
+
+#about span {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bio-wrapper {
+    padding: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    #about article > div {
+        width: 300px;
+        padding: 1em;
+    }
+}
+
+#about h3 {
+    font-size: 24px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: left;
+}
+
+#about span {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bio-wrapper {
+    padding: 2em;
+}
+
+@media screen and (max-width: 480px) {
+    #about article > div {
+        width: 240px;
+        padding: 1em;
+    }
+}
+
+#about h3 {
+    font-size: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: left;
+}
+
+#about span {
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bio-wrapper {
+    padding: 2em;
+}
+
 @media screen and (max-width: 1280px) {
     .bio-wrapper {
         padding: 0em;
@@ -360,10 +878,100 @@ header {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 900px) {
+    .bio-wrapper {
+        padding: 0em;
+    }
+}
+
+.bio-wrapper p {
+    padding: 2em;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    .bio-wrapper {
+        padding: 0em;
+    }
+}
+
+.bio-wrapper p {
+    padding: 2em;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+    .bio-wrapper {
+        padding: 0em;
+    }
+}
+
+.bio-wrapper p {
+    padding: 2em;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
 @media screen and (max-width: 1280px) {
     .bio-wrapper p {
         padding: 0em;
-        font-size: 19px;
+        font-size: 13px;
+        line-height: 1;
+    }
+}
+
+#about li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2em 0 0;
+}
+
+#about ul {
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .bio-wrapper p {
+        padding: 0em;
+        font-size: 15px;
+        line-height: 1;
+    }
+}
+
+#about li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2em 0 0;
+}
+
+#about ul {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .bio-wrapper p {
+        padding: 0em;
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+
+#about li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2em 0 0;
+}
+
+#about ul {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .bio-wrapper p {
+        padding: 0em;
+        font-size: 13px;
         line-height: 1;
     }
 }
@@ -388,9 +996,57 @@ header {
     width: 57px;
 }
 
+@media screen and (max-width: 900px) {
+    #about ul {
+        margin-top: 2.7em;
+    }
+}
+
+#about li img {
+    width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    #about ul {
+        margin-top: 2.7em;
+    }
+}
+
+#about li img {
+    width: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    #about ul {
+        margin-top: 2.7em;
+    }
+}
+
+#about li img {
+    width: 25px;
+}
+
 @media screen and (max-width: 1280px) {
     #about li img {
         width: 37px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #about li img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about li img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about li img {
+        width: 20px;
     }
 }
 
