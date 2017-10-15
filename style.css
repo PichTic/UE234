@@ -13,8 +13,6 @@
 body
 {
     font-family: 'Dosis', sans-serif;
-
-    background-color: #f9f9f9;
 }
 
 a
@@ -66,6 +64,12 @@ h2
 
     text-align: center;
 }
+@media screen and (max-width: 860px) {
+    h2{
+        padding: 0.5em 0;
+        font-size: 30px;
+    }
+}
 
 h3
 {
@@ -73,6 +77,12 @@ h3
     font-size: 38px;
 
     text-align: center;
+}
+@media screen and (max-width: 860px) {
+    h3 {
+        padding: 0.5em 0;
+        font-size: 24px;
+    }
 }
 
 h2 a,
@@ -93,6 +103,34 @@ h3 a
     .container
     {
         width: 970px;
+    }
+}
+@media screen and (max-width: 1069px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+@media screen and (max-width: 860px)
+{
+    .container
+    {
+        width: 580px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .container
+    {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container
+    {
+        width: 340px;
     }
 }
 
@@ -324,6 +362,35 @@ header
         top: -315px;
     }
 }
+@media screen and (max-width: 1069px){
+    .owl-prev,
+    .owl-next
+    {
+        top: -240px;
+    }
+}
+@media screen and (max-width: 860px){
+    .owl-prev,
+    .owl-next
+    {
+        top: -160px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .owl-prev,
+    .owl-next
+    {
+        top: -120px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .owl-prev,
+    .owl-next
+    {
+        display: none;
+    }
+}
 
 .owl-prev
 {
@@ -369,11 +436,35 @@ header
     }
 }
 
+@media screen and (max-width: 1069px){
+    #projects article
+    {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #projects article
+    {
+        padding: 0em;
+    }
+    #projects article > h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+}
+
+
 #projects article h3
 {
-    font-size: 25px;
-
     text-align: left;
+}
+@media screen and (max-width: 530px) {
+    #projects article > h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+
 }
 
 #projects article p
@@ -384,6 +475,15 @@ header
     text-align: justify;
 }
 
+@media screen and (max-width: 860px)
+{
+
+    #projects article > p:not(.projet) {
+        display: none;
+        visibility: hidden;
+    }
+
+}
 
 #projects article p.projet
 {
@@ -391,6 +491,14 @@ header
 
     text-align: right;
 }
+
+@media screen and (max-width: 860px)
+{
+    #projects article p.projet {
+        text-align: center;
+    }
+}
+
 
 #projects article p.projet a
 {
@@ -429,12 +537,12 @@ header
     }
 }
 
-#about article
+#about > article
 {
     border: 1px solid lightgrey;
     background-color: white;
 }
-#about article > div
+#about > article > div
 {
     float: right;
 
@@ -534,6 +642,94 @@ header
     }
 }
 
+/*
+*
+* Smartphone-about
+*
+**************************/
+
+#smartphone-about
+{
+    display: none;
+    visibility: hidden;
+    background: transparent url(Images/Goerges-Abitbol.jpg) top center no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+}
+
+#smartphone-about > article {
+    background-color: rgba(255,255,255,0.6);
+    padding: 8em 8em 8em 8em;
+}
+#smartphone-about h3
+{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+#smartphone-about span
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+
+    display: block;
+
+    text-align: left;
+}
+
+#smartphone-about p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 19px;
+}
+
+#smartphone-about ul
+{
+    text-align: center;
+    padding-top: 2em;
+}
+
+#smartphone-about li {
+    list-style: none;
+    display: inline-block;
+    margin: 2em;
+}
+
+#smartphone-about li img {
+     width: 47px;
+}
+@media screen and (max-width: 1069px)
+{
+    #about > article
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #smartphone-about
+    {
+        display: block;
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 860px) {
+    #smartphone-about > article {
+        padding: 4em 4em 4em 4em;
+    }
+}
+@media screen and (max-width: 860px) {
+    #smartphone-about > article {
+        padding: 2em 2em 2em 2em;
+    }
+    #smartphone-about h3 {
+        margin-bottom: 1.5em;
+    }
+    #smartphone-about ul {
+        padding: 1em;
+    }
+    #smartphone-about li {
+        margin: 1em;
+    }
+}
 /* News
 ==============================================================================================================*/
 

@@ -56,11 +56,11 @@
                 <div>
                     <img src="Images/abcdproject.jpg" alt="abcd project">
                     <article>
-                            <h3>ABCD Project</h3>
-                            <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
-                            <p class="projet">
-                                <a href="#1" title="ABCD Project">Voir le projet</a>
-                            </p>
+                        <h3>ABCD Project</h3>
+                        <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                        <p class="projet">
+                            <a href="#1" title="ABCD Project">Voir le projet</a>
+                        </p>
                     </article>
                 </div>
                 <div>
@@ -87,6 +87,17 @@
         </section>
         <section id="about">
             <h2><a href="#" title="A mon propos">Qui suis-je ?</a></h2>
+            <div id="smartphone-about" class="box-center container" data-paroller-factor="-0.15">
+                <article>
+                    <h3>Georges Abitbol<span>Développeur informatique</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque magna turpis, ac tincidunt sem posuere ac. Proin semper justo molestie dictum accumsan. Nunc tristique quis ligula vitae aliquet. Phasellus varius semper egestas.</p>
+                   <ul>
+                        <li><a href="#" title="Bouton Facebook"><img src="Images/Facebook.png" alt="Suivez-moi sur Facebook !"></a></li>
+                        <li><a href="#" title="Bouton LinkedIn"><img src="Images/Linkedin.png" alt="Suivez-moi sur LinkedIn"></a></li>
+                        <li><a href="#" title="Bouton Twitter"><img src="Images/Twitter.png" alt="Suivez-moi sur Twitter"></a></li>
+                   </ul>
+                </article>
+            </div>
             <article class="box-center container clearfix scrollme animateme"
                         data-when="view"
                         data-from="0.5"
@@ -161,6 +172,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
         <script type="text/javascript" src="js/scrollfix.js"></script>
+        <script type="text/javascript" src="js/jquery.paroller.min.js"></script>
         <script type="text/javascript" src="js/owlcarousel/dist/owl.carousel.min.js"></script>
         <script type="text/javascript">
 
@@ -180,13 +192,14 @@
             $("#nav").scrollFix({
                 side: 'top'
             });
-//            $("#phone-button").scrollFix({
-//                side: 'top'
-//            });
+
 
             $("#phone-button").click(function () {
-			$(".smartphone-nav").slideToggle("slow");
-		});
+                $(".smartphone-nav").slideToggle("slow");
+            });
+
+
+            $(window).paroller();
         </script>
     </body>
 </html>
