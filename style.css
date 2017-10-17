@@ -35,6 +35,7 @@ a:focus
     color: #c70039;
 }
 
+
 h1
 {
     font-family: 'Quattrocento Sans', sans-serif;
@@ -64,6 +65,34 @@ h2
 
     text-align: center;
 }
+
+h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 30px;
+    color: #95989a;
+    padding: 0 0 0 0;
+
+    text-align: center;
+}
+img.bio-portait{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#progressLine {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+}
+
+#demicercle {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+}
+
 @media screen and (max-width: 860px) {
     h2{
         padding: 0.5em 0;
@@ -78,6 +107,7 @@ h3
 
     text-align: center;
 }
+
 @media screen and (max-width: 860px) {
     h3 {
         padding: 0.5em 0;
@@ -92,10 +122,12 @@ h3 a
 
     color: #95989a;
 }
-
 .container
 {
     width: 1170px;
+}
+img.bio-portait{
+    height: 250px;
 }
 
 @media screen and (max-width: 1280px)
@@ -131,6 +163,9 @@ h3 a
     .container
     {
         width: 340px;
+    }
+    img.bio-portait{
+        height: 200px;
     }
 }
 
