@@ -62,36 +62,10 @@ h2
     font-size: 40px;
 
     padding: 1.5em 0 1.5em 0;
-    color: #95989a;
-    text-align: center;
-}
-
-h4 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 30px;
-    color: #95989a;
-    padding: 0 0 0 0;
 
     text-align: center;
 }
-img.bio-portait{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-}
 
-#progressLine {
-  margin: 20px;
-  width: 400px;
-  height: 8px;
-}
-
-#demicercle {
-  margin: 20px;
-  width: 200px;
-  height: 100px;
-}
 
 @media screen and (max-width: 860px) {
     h2{
@@ -832,6 +806,54 @@ hr
     background-color: slategray;
 }
 
+/* Page bio
+====================================================================================================*/
+
+
+#progressLine {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
+
+.bio-titre {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 30px;
+    color: #95989a;
+    padding: 0 0 0 0;
+    display:block;
+    text-align: center;
+}
+.bio-titre span {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 25px;
+
+  display: block;
+
+  text-align: center;
+}
+
+img.bio-portait{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#container {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
+
+.graphiques {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Footer
 ====================================================================================================*/
@@ -852,6 +874,7 @@ footer a
 
     color: #666;
 }
+<<<<<<< HEAD
 /*============================ formulaire contact ================================*/
 form {
     width: 750px;
@@ -911,3 +934,5 @@ textarea {
     height: 150px;
     color: black;
 }
+=======
+>>>>>>> origin/master
