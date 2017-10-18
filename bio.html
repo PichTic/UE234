@@ -19,7 +19,7 @@
          </div>
          <nav id="nav">
             <ul>
-                <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
+               <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
                <li><a href="#me" title="Accéder à mon profil">CV</a></li>
                <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
                <li><a href="#contact" title="Contactez-moi">Contact</a></li>
@@ -47,11 +47,25 @@
          </ul>
       </nav>
 
-      <div>
+
+      <!--parallax-->
+      <div class ="parallax" data-paroller-factor="0.3">
          <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait" class ="bio-portait">
-         <h4>Georges Abitbol</h4>
-         <h4>Développeur informatique</h4>
+         <h1 class="bio-titre">Georges Abitbol<span>Développeur informatique</span></h1>
       </div>
+
+        <div class="graphiques">
+      <!--progressbar-->
+      <div>
+         <h2><a href="#" title="Mes compétences">Compétences professionnelles</a></h2>
+         <div id="container"></div>
+         <p>Compétence en html</p>
+         <p>Compétence en css</p>
+         <p>Compétence en javascript</p>
+         <p>Compétence en SQL</p>
+      </div>
+    </div>
+
       <section id="blog" class="box-center container">
          <h2><a href="#" title="Mes expériences professionnelles">Expériences professionnelles</a></h2>
          <hr>
@@ -63,11 +77,9 @@
             data-translatex="400"
             >
             <p>Mai 2015- Septembre 2017</p>
-            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste</a></h3>
+            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste n°1</a></h3>
             <h4>Nom de l'entreprise</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula.</p>
-            <div id="demicercle"></div>
-            <p>Plus 20% de traffic sur le site</p>
          </article>
          <hr>
          <article class="scrollme animateme"
@@ -78,7 +90,7 @@
             data-translatex="-400"
             >
             <p>Janvier 2012 - Mars 2015</p>
-            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste</a></h3>
+            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste n°2</a></h3>
             <h4>Nom de l'entreprise</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula.</p>
          </article>
@@ -91,13 +103,11 @@
             data-translatex="400"
             >
             <p>Juin 2011- Août 2011</p>
-            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste</a></h3>
+            <h3><a href="lien_entreprise" title="nom du poste">Nom du poste n°3</a></h3>
             <h4>Nom de l'entreprise</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula</p>
          </article>
          <hr>
-
-
          <h2><a href="#" title="Ma formation académique">Formation académique</a></h2>
          <article class="scrollme animateme"
             data-when="enter"
@@ -108,11 +118,9 @@
             >
             <hr>
             <p>2010-2011</p>
-            <h3><a href="lien_formation" title="Licence informatique">Niveau formation</a></h3>
+            <h3><a href="lien_formation" title="Licence informatique">Niveau formation n°1</a></h3>
             <h4>Nom de l'établissement</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula.</p>
-            <div id="progressLine"></div>
-            <p>100% des UEs validées</p>
          </article>
          <hr>
          <article class="scrollme animateme"
@@ -123,7 +131,7 @@
             data-translatex="-400"
             >
             <p>2009-2010</p>
-            <h3><a href="lien_formation" title="Licence informatique">Niveau formation</a></h3>
+            <h3><a href="lien_formation" title="Licence informatique">Niveau formation n°2</a></h3>
             <h4>Nom de l'établissement</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula.</p>
          </article>
@@ -136,7 +144,7 @@
             data-translatex="400"
             >
             <p>2008-2009</p>
-            <h3><a href="lien_formation" title="Licence informatique">Niveau formation</a></h3>
+            <h3><a href="lien_formation" title="Licence informatique">Niveau formation n°3</a></h3>
             <h4>Nom de l'établissement</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula</p>
          </article>
@@ -144,25 +152,69 @@
          <p>
             <a href="#" class="button" title="Voir les dernières actualités">Retrouvez mes actualités sur mon blog</a>
          </p>
+         <p>
+            <a href="#" class="button" title="Téléchargez mon CV">Téléchargez mon CV en format PDF</a>
+         </p>
       </section>
-
       <footer>
          <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
       </footer>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
       <script type="text/javascript" src="js/scrollfix.js"></script>
+      <script type="text/javascript">
+         $("#nav").scrollFix({
+                 side: 'top'
+             });
 
-    <script type="text/javascript">
-        $("#nav").scrollFix({
-                side: 'top'
-            });
 
+             $("#phone-button").click(function () {
+                 $(".smartphone-nav").slideToggle("slow");
+             });
+      </script>
 
-            $("#phone-button").click(function () {
-                $(".smartphone-nav").slideToggle("slow");
-            });
-    </script>
+      <!--progressbar-->
+      <script type="text/javascript" src="js/jquery.goalProgress.min.js"></script>
+      <script type="text/javascript">
+         var bar = new ProgressBar.Line(graphiques, {
+         strokeWidth: 4,
+         easing: 'easeInOut',
+         duration: 1400,
+         color: '#FFEA82',
+         trailColor: '#eee',
+         trailWidth: 1,
+         svgStyle: {width: '100%', height: '100%'},
+         text: {
+         style: {
+           color: '#999',
+           position: 'absolute',
+           right: '0',
+           top: '30px',
+           padding: 0,
+           margin: 0,
+           transform: null
+         },
+         autoStyleContainer: false
+         },
+         from: {color: '#FFEA82'},
+         to: {color: '#ED6A5A'},
+         step: (state, bar) => {
+         bar.setText(Math.round(bar.value() * 100) + ' %');
+         }
+         });
 
+         bar.animate(1.0);
+      </script>
+
+      <!-- parallax-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+         $(window).paroller();
+         $(".parallax").paroller({
+                                     factor: 0.3,
+                                     type: 'background',
+                                     direction: 'vertical'
+                                 });
+      </script>
    </body>
 </html>
