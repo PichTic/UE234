@@ -6,9 +6,6 @@
       <title>Georges Abitbol</title>
       <link rel="stylesheet" href="normalize.css" media="all">
       <link rel="stylesheet" href="style.css" media="all">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!--<link rel="stylesheet" href="owl.carousel.css" media="all">
-         <link rel="stylesheet" href="owl.theme.default.min.css" media="all">-->
       <style>
          @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
       </style>
@@ -22,6 +19,7 @@
          </div>
          <nav id="nav">
             <ul>
+                <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
                <li><a href="#me" title="Accéder à mon profil">CV</a></li>
                <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
                <li><a href="#contact" title="Contactez-moi">Contact</a></li>
@@ -68,7 +66,6 @@
             <h3><a href="lien_entreprise" title="nom du poste">Nom du poste</a></h3>
             <h4>Nom de l'entreprise</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula.</p>
-            <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
             <div id="demicercle"></div>
             <p>Plus 20% de traffic sur le site</p>
          </article>
@@ -99,9 +96,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nulla sed efficitur placerat. Maecenas nec purus sapien. Praesent ut ante et lacus auctor pretium. Nullam varius arcu vitae tortor sagittis ultrices. Suspendisse pulvinar vestibulum sem, eu maximus nisi mollis quis. Proin in sagittis mauris. Ut suscipit leo vel enim iaculis dictum. Pellentesque ac quam vitae turpis semper vehicula</p>
          </article>
          <hr>
-      </section>
 
-      <section id="blog" class="box-center container">
+
          <h2><a href="#" title="Ma formation académique">Formation académique</a></h2>
          <article class="scrollme animateme"
             data-when="enter"
@@ -149,65 +145,24 @@
             <a href="#" class="button" title="Voir les dernières actualités">Retrouvez mes actualités sur mon blog</a>
          </p>
       </section>
+
       <footer>
          <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
       </footer>
-      <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
       <script type="text/javascript" src="js/scrollfix.js"></script>
-      <script type="text/javascript">
-         var ProgressBar = require('progressbar.js')
-         var bar = new ProgressBar.Line(progressLine, { //ReferenceError: ProgressBar is not defined
-           strokeWidth: 4,
-           easing: 'easeInOut',
-           duration: 1400,
-           color: '#FFEA82',
-           trailColor: '#eee',
-           trailWidth: 1,
-           svgStyle: {width: '100%', height: '100%'},
-           from: {color: '#FFEA82'},
-           to: {color: '#ED6A5A'},
-           step: (state, bar) => {
-             bar.path.setAttribute('stroke', state.color);
-           }
-         });
 
-         bar.animate(1.0);
-      </script>
+    <script type="text/javascript">
+        $("#nav").scrollFix({
+                side: 'top'
+            });
 
-<script>
-var bar = new ProgressBar.SemiCircle(demicercle, {
-  strokeWidth: 6,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  svgStyle: null,
-  text: {
-    value: '',
-    alignToBottom: false
-  },
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
-  // Set default step function for all animate calls
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
-    var value = Math.round(bar.value() * 20);
-    if (value === 0) {
-      bar.setText('');
-    } else {
-      bar.setText(value);
-    }
 
-    bar.text.style.color = state.color;
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
-
-bar.animate(1.0);
-</script>
+            $("#phone-button").click(function () {
+                $(".smartphone-nav").slideToggle("slow");
+            });
+    </script>
 
    </body>
 </html>
