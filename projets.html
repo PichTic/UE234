@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Georges Abitbol</title>
+        <link rel="stylesheet" href="normalize.css" media="all">
+        <link rel="stylesheet" href="style.css" media="all">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="vertical-align-container">
+                <div class="title vertical-align-box box-center">
+                    <h1>Georges Abitbol<span>portfolio</span></h1>
+                </div>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#me" title="Accéder à mon profil">CV</a></li>
+                    <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
+                    <li><a href="#contact" title="Contactez-moi">Contact</a></li>
+                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="phone-button">
+            <p>Menu</p>
+        </div>
+        <nav class="smartphone-nav">
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <a href="#me" title="Accéder à mon profil">CV</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#proj" title="Voir mes réalisations">Réalisations</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#contact" title="Contactez-moi">Contact</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#blog" title="Voir les dernières actualités">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
+        </footer>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scrollfix.js"></script>
+        <script type="text/javascript">
+
+
+            $("#nav").scrollFix({
+                side: 'top'
+            });
+            $("#phone-button").click(function () {
+                $(".smartphone-nav").slideToggle("slow");
+            });
+
+
+        </script>
+    </body>
+</html>

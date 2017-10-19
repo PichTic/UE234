@@ -289,6 +289,7 @@ header
 
         width: 100%;
 
+        cursor: pointer;
         text-align: right;
     }
 
@@ -934,4 +935,3 @@ textarea {
     height: 150px;
     color: black;
 }
-

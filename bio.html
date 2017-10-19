@@ -6,6 +6,7 @@
       <title>Georges Abitbol</title>
       <link rel="stylesheet" href="normalize.css" media="all">
       <link rel="stylesheet" href="style.css" media="all">
+      <link rel="stylesheet" href="goalProgress.css" media="all">
       <style>
          @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
       </style>
@@ -49,22 +50,25 @@
 
 
       <!--parallax-->
-      <div class ="parallax" data-paroller-factor="0.3">
+      <div data-paroller-factor="0.5" data-paroller-type="foreground">
          <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait" class ="bio-portait">
          <h1 class="bio-titre">Georges Abitbol<span>Développeur informatique</span></h1>
-      </div>
 
-        <div class="graphiques">
-      <!--progressbar-->
-      <div>
-         <h2><a href="#" title="Mes compétences">Compétences professionnelles</a></h2>
-         <div id="container"></div>
-         <p>Compétence en html</p>
-         <p>Compétence en css</p>
-         <p>Compétence en javascript</p>
-         <p>Compétence en SQL</p>
       </div>
-    </div>
+      <div class="container box-center">
+
+         <h2><a href="#" title="Mes compétences">Compétences professionnelles</a></h2>
+
+          <div id="sample_goal">
+          </div>
+          <div id="sample_goal2">
+          </div>
+          <div id="sample_goal3">
+          </div>
+          <div id="sample_goal5">
+          </div>
+
+      </div>
 
       <section id="blog" class="box-center container">
          <h2><a href="#" title="Mes expériences professionnelles">Expériences professionnelles</a></h2>
@@ -162,8 +166,11 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
       <script type="text/javascript" src="js/scrollfix.js"></script>
+      <script type="text/javascript" src="js/jquery.goalProgress.min.js"></script>
+      <script type="text/javascript" src="js/jquery.paroller.min.js"></script>
       <script type="text/javascript">
-         $("#nav").scrollFix({
+
+            $("#nav").scrollFix({
                  side: 'top'
              });
 
@@ -171,50 +178,37 @@
              $("#phone-button").click(function () {
                  $(".smartphone-nav").slideToggle("slow");
              });
-      </script>
 
-      <!--progressbar-->
-      <script type="text/javascript" src="js/jquery.goalProgress.min.js"></script>
-      <script type="text/javascript">
-         var bar = new ProgressBar.Line(graphiques, {
-         strokeWidth: 4,
-         easing: 'easeInOut',
-         duration: 1400,
-         color: '#FFEA82',
-         trailColor: '#eee',
-         trailWidth: 1,
-         svgStyle: {width: '100%', height: '100%'},
-         text: {
-         style: {
-           color: '#999',
-           position: 'absolute',
-           right: '0',
-           top: '30px',
-           padding: 0,
-           margin: 0,
-           transform: null
-         },
-         autoStyleContainer: false
-         },
-         from: {color: '#FFEA82'},
-         to: {color: '#ED6A5A'},
-         step: (state, bar) => {
-         bar.setText(Math.round(bar.value() * 100) + ' %');
-         }
-         });
+				$('#sample_goal').goalProgress({
+					goalAmount: 100,
+					currentAmount: 95,
+					textBefore: '%',
+					textAfter: ' Compétence en html'
+				});
 
-         bar.animate(1.0);
-      </script>
+				$('#sample_goal1').goalProgress({
+					goalAmount: 100,
+					currentAmount: 95,
+					textBefore: '%',
+					textAfter: ' Compétence en CSS'
+				});
 
-      <!-- parallax-->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script type="text/javascript">
+				$('#sample_goal2').goalProgress({
+					goalAmount: 100,
+					currentAmount: 80,
+					textBefore: '%',
+					textAfter: ' Compétence en JS'
+				});
+
+				$('#sample_goal3').goalProgress({
+					goalAmount: 100,
+					currentAmount: 90,
+					textBefore: '%',
+					textAfter: ' Compétence en SQL'
+				});
+
          $(window).paroller();
-         $(".parallax").paroller({
-                                     factor: 0.3,
-                                     type: 'background',
-                                     direction: 'vertical'
-                                 });
+
       </script>
    </body>
 </html>
