@@ -7,6 +7,7 @@
         <title>Georges Abitbol</title>
         <link rel="stylesheet" href="normalize.css" media="all">
         <link rel="stylesheet" href="style.css" media="all">
+        <link rel="stylesheet" href="venobox.css" media="all">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
         </style>
@@ -21,9 +22,10 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#me" title="Accéder à mon profil">CV</a></li>
-                    <li><a href="#proj" title="Voir mes réalisations">Réalisations</a></li>
-                    <li><a href="#contact" title="Contactez-moi">Contact</a></li>
+                    <li><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
+                    <li><a href="bio.html" title="Accéder à mon profil">CV</a></li>
+                    <li><a href="projets.html" title="Voir mes réalisations">Réalisations</a></li>
+                    <li><a href="contact.html" title="Contactez-moi">Contact</a></li>
                     <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
                 </ul>
             </nav>
@@ -48,22 +50,110 @@
             </ul>
         </nav>
 
+        <section class="container box-center">
+            <h2>Mes Réalisations</h2>
+            <div id="floatproject" class="project1"
+                 data-philter-grayscale="100 0" >
+                <article class="scrollme animateme" data-when="span" data-from="0.5" data-to="1.1" data-scale="0" data-easing="easeinout">
+                    <h3>Float Project</h3>
+                    <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                    <p class="projet">
+                        <a class="venobox" data-overlay="rgba(234, 34, 34, .7)" data-gall="projGallery" href="Images/floatproject.jpg" title="Float Project">Voir le projet</a>
+                    </p>
+                </article>
+            </div>
+
+            <div id="abcdproject" class="project1"
+                 data-philter-grayscale="100 0" >
+                <article class="scrollme animateme" data-when="span" data-from="0.5" data-to="1.1" data-scale="0" data-easing="easeinout">
+                    <h3>ABCD Project</h3>
+                    <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                    <p class="projet">
+                        <a class="venobox" data-overlay="rgba(234, 34, 34, .7)" data-gall="projGallery" href="Images/abcdproject.jpg" title="ABCD Project">Voir le projet</a>
+                    </p>
+                </article>
+            </div>
+
+            <div id="videoproject" class="project1"
+                 data-philter-grayscale="100 0" >
+                <article class="scrollme animateme" data-when="span" data-from="0.5" data-to="1.1" data-scale="0" data-easing="easeinout">
+                    <h3>Video Project</h3>
+                    <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                    <p class="projet">
+                        <a class="venobox" data-overlay="rgba(234, 34, 34, .7)" data-gall="projGallery" href="Images/videoproject.jpg" title="Video Project">Voir le projet</a>
+                    </p>
+                </article>
+            </div>
+
+            <div id="anakinproject" class="project1"
+                 data-philter-grayscale="100 0" >
+                <article class="scrollme animateme" data-when="span" data-from="0.8" data-to="1.6" data-scale="0" data-easing="easeinout">
+                    <h3>Anakin Project</h3>
+                    <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                    <p class="projet">
+                        <a class="venobox" data-overlay="rgba(234, 34, 34, .7)" data-gall="projGallery" href="Images/Anakin_cut1.png" title="Anakin Project">Voir le projet</a>
+                    </p>
+                </article>
+            </div>
+
+            <div id="huntingproject" class="project1"
+                 data-philter-grayscale="100 0" >
+                <article class="scrollme animateme" data-when="span" data-from="1" data-to="1.9" data-scale="0" data-easing="easeinout">
+                    <h3>Hunting Project</h3>
+                    <p>Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales</p>
+                    <p class="projet">
+                        <a class="venobox" data-overlay="rgba(234, 34, 34, .7)" data-gall="projGallery" href="Images/hunting_cut1.png" title="Hunting Project">Voir le projet</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+
         <footer>
             <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
         </footer>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/scrollfix.js"></script>
+        <script type="text/javascript" src="js/venobox.min.js"></script>
+        <script type="text/javascript" src="js/philter.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
         <script type="text/javascript">
 
 
             $("#nav").scrollFix({
                 side: 'top'
             });
+
             $("#phone-button").click(function () {
                 $(".smartphone-nav").slideToggle("slow");
             });
 
+//            $('.ml3').each(function () {
+//                $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+//            });
+//
+//
+//            anime.timeline({loop: 1})
+//                .add({
+//                    targets: '.ml3 .letter',
+//                    opacity: [0, 1],
+//                    easing: "easeInOutQuad",
+//                    duration: 2250,
+//                    delay: function (el, i) {
+//                        return 150 * (i + 1);
+//                    }
+//                });
+
+            new Philter({
+                transitionTime: 0.3,
+                url: './js',
+                tag: true
+            });
+
+            $('.venobox').venobox();
 
         </script>
     </body>

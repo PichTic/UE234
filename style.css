@@ -935,3 +935,100 @@ textarea {
     height: 150px;
     color: black;
 }
+
+/*
+======================================Projets =========================*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.project1{
+    margin-top: 5em;
+    position: relative;
+    border-radius: 3px;
+}
+
+.project1 article {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+    padding: 11em 5em 5em 5em;
+
+    text-align: center;
+
+    color: lightgrey;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 0 3px 3px 0;
+}
+
+.project1 article p
+{
+    font-size: 19px;
+    line-height: 1.5;
+
+    text-align: justify;
+}
+
+.project1 article h3
+{
+    text-align: left;
+}
+
+.project1 article p.projet a
+{
+    display: inline-block;
+
+    padding: .4em .7em;
+
+    text-decoration: none;
+
+    color: lightgrey;
+    border: 1px solid white;
+}
+
+.project1 article p.projet a:hover,
+.project1 article p.projet a:focus,
+.project1 article p.projet a:active
+{
+    color: black;
+    background-color: rgba(255,255,255,.7);
+}
+
+#floatproject {
+    background-image: url('Images/floatproject.jpg');
+    background-size: cover;
+    height: 600px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#abcdproject {
+    background-image: url('Images/abcdproject.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+#videoproject {
+    background-image: url('Images/videoproject.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+#anakinproject {
+    background-image: url('Images/Anakin_cut1.png');
+    background-size: cover;
+    height: 600px;
+}
+
+#huntingproject {
+    background-image: url('Images/hunting_cut1.png');
+    background-size: cover;
+    height: 600px;
+}
