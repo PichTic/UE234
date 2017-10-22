@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Georges Abitbol</title>
+        <link rel="stylesheet" href="normalize.css" media="all">
+        <link rel="stylesheet" href="style.css" media="all">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Dosis|Quattrocento+Sans|Raleway');
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="vertical-align-container">
+                <div class="title vertical-align-box box-center">
+                    <h1>Georges Abitbol<span>portfolio</span></h1>
+                </div>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
+                    <li><a href="bio.html" title="Accéder à mon profil">CV</a></li>
+                    <li><a href="projets.html" title="Voir mes réalisations">Réalisations</a></li>
+                    <li><a href="contact.html" title="Contactez-moi">Contact</a></li>
+                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="phone-button">
+            <p>Menu</p>
+        </div>
+        <nav class="smartphone-nav">
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <a href="#me" title="Accéder à mon profil">CV</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#proj" title="Voir mes réalisations">Réalisations</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#contact" title="Contactez-moi">Contact</a>
+                </li>
+                <li class="flex-item">
+                    <a href="#blog" title="Voir les dernières actualités">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container box-center">
+            <h2>Mes Actualités</h2>
+            <div class="button-group filters-button-group">
+                <button class="button" data-filter="*">show all</button>
+                <button class="button" data-filter=".news">News</button>
+                <button class="button" data-filter=".article">Article</button>
+                <button class="button" data-filter=".blog">Blog</button>
+                <button class="button" data-filter=".rs">Réseaux Sociaux</button>
+            </div>
+
+            <div class="grid clearfix">
+                <!--<div class="grid-sizer"></div>-->
+
+                <div class="element-item news blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Dimanche 22 octobre</p>
+                            <h3>Un titre de News</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay black">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+                <div class="element-item article blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Samedi 21 octobre</p>
+                            <h3>Un titre d'article</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay red">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+                <div class="element-item article blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Vendredi 20 octobre</p>
+                            <h3>Un titre d'un autre article</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay red">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+                <div class="element-item rs">
+                    <img src="http://loremflickr.com/300/290/?random=1" />
+                    <div class="full-overlay">
+                        <p>Dimanche 22 Octobre</p>
+                        <p><a href="#">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="element-item rs">
+                    <img src="http://loremflickr.com/300/290/?random=2" />
+                    <div class="full-overlay">
+                        <p>Dimanche 22 Octobre</p>
+                        <p><a href="#">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="element-item news blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Dimanche 22 octobre</p>
+                            <h3>Un titre de News plus long pour voir si ca passe bien</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay black">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+                <div class="element-item rs">
+                    <img src="http://loremflickr.com/300/290/?random=3" />
+                    <div class="full-overlay">
+                        <p>Dimanche 22 Octobre</p>
+                        <p><a href="#">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="element-item article blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Samedi 21 octobre</p>
+                            <h3>Un titre d'article</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay red">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+                <div class="element-item rs">
+                    <img src="http://loremflickr.com/300/290/?random=4" />
+                    <div class="full-overlay">
+                        <p>Dimanche 22 Octobre</p>
+                        <p><a href="#">Instagram</a></p>
+                    </div>
+                </div>
+                <div class="element-item article blog flex-container-blog">
+                    <div class="flex-item-blog">
+                        <div>
+                            <p>Samedi 21 octobre</p>
+                            <h3>Un titre d'article</h3>
+                        </div>
+                    </div>
+                    <div class="flex-item-blog overlay red">
+                        <p><a href="#">Lire</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="#" title="crédits et mentions légales">crédits et mentions légales</a></p>
+        </footer>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scrollfix.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/packery-mode.pkgd.min.js"></script>
+        <script type="text/javascript">
+
+            var $grid = $('.grid').isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'packery',
+                packery: {
+                    gutter: 10
+                }
+            });
+
+            $('.filters-button-group').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({filter: filterValue});
+            });
+
+            $('.button-group').each(function (i, buttonGroup) {
+                var $buttonGroup = $(buttonGroup);
+                $buttonGroup.on('click', 'button', function () {
+                    $buttonGroup.find('.is-checked').removeClass('is-checked');
+                    $(this).addClass('is-checked');
+                });
+            });
+
+            $("#nav").scrollFix({
+                side: 'top'
+            });
+
+            $("#phone-button").click(function () {
+                $(".smartphone-nav").slideToggle("slow");
+            });
+
+        </script>
+    </body>
+</html>
