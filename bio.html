@@ -24,7 +24,7 @@
                     <li><a href="bio.html" title="Accéder à mon profil">CV</a></li>
                     <li><a href="projets.html" title="Voir mes réalisations">Réalisations</a></li>
                     <li><a href="contact.html" title="Contactez-moi">Contact</a></li>
-                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                    <li><a href="blog.html" title="Voir les dernières actualités">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,24 +33,27 @@
         </div>
         <nav class="smartphone-nav">
             <ul class="flex-container">
-                <li class="flex-item">
-                    <a href="#me" title="Accéder à mon profil">CV</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#proj" title="Voir mes réalisations">Réalisations</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#contact" title="Contactez-moi">Contact</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#blog" title="Voir les dernières actualités">Blog</a>
-                </li>
-            </ul>
+				<li class="flex-item">
+					<a href="index.html" title="Retour à l'accueil">Accueil</a>
+				</li>
+				<li class="flex-item">
+					<a href="bio.html" title="Accéder à mon profil">CV</a>
+				</li>
+				<li class="flex-item">
+					<a href="projets.html" title="Voir mes réalisations">Réalisations</a>
+				</li>
+				<li class="flex-item">
+					<a href="contact.html" title="Contactez-moi">Contact</a>
+				</li>
+				<li class="flex-item">
+					<a href="blog.html" title="Voir les dernières actualités">Blog</a>
+				</li>
+			</ul>
         </nav>
 
 
         <!--parallax-->
-        <div data-paroller-factor="0.5" data-paroller-type="foreground">
+        <div data-paroller-factor="0.2" data-paroller-type="foreground" class="bio-parallax">
             <img src="Images/Goerges-Abitbol.jpg" alt="Mon portrait" class ="bio-portait">
             <h1 class="bio-titre">Georges Abitbol<span>Développeur informatique</span></h1>
 
@@ -113,6 +116,7 @@
             </article>
             <hr>
             <h2><a href="#" title="Ma formation académique">Formation académique</a></h2>
+            <hr>
             <article class="scrollme animateme"
                      data-when="enter"
                      data-from="0.75"
@@ -120,7 +124,6 @@
                      data-opacity="0"
                      data-translatex="400"
                      >
-                <hr>
                 <p>2010-2011</p>
                 <h3><a href="lien_formation" title="Licence informatique">Niveau formation n°1</a></h3>
                 <h4>Nom de l'établissement</h4>
@@ -154,7 +157,7 @@
             </article>
             <hr>
             <p>
-                <a href="#" class="button" title="Voir les dernières actualités">Retrouvez mes actualités sur mon blog</a>
+                <a href="blog.html" class="button" title="Voir les dernières actualités">Retrouvez mes actualités sur mon blog</a>
             </p>
             <p>
                 <a href="#" class="button" title="Téléchargez mon CV">Téléchargez mon CV en format PDF</a>
@@ -182,29 +185,29 @@
             $('#sample_goal').goalProgress({
                 goalAmount: 100,
                 currentAmount: 95,
-                textBefore: '%',
-                textAfter: ' Compétence en html'
+                textBefore: 'Niveau en HTML ',
+                textAfter: '%'
             });
 
             $('#sample_goal1').goalProgress({
                 goalAmount: 100,
                 currentAmount: 95,
-                textBefore: '%',
-                textAfter: ' Compétence en CSS'
+                textBefore: 'Niveau en CSS ',
+                textAfter: '%'
             });
 
             $('#sample_goal2').goalProgress({
                 goalAmount: 100,
                 currentAmount: 80,
-                textBefore: '%',
-                textAfter: ' Compétence en JS'
+               textBefore: 'Niveau en JS ',
+                textAfter: '%'
             });
 
             $('#sample_goal3').goalProgress({
                 goalAmount: 100,
                 currentAmount: 90,
-                textBefore: '%',
-                textAfter: ' Compétence en SQL'
+                textBefore: 'Niveau en SQL ',
+                textAfter: '%'
             });
 
             $(window).paroller();

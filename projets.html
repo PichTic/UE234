@@ -26,7 +26,7 @@
                     <li><a href="bio.html" title="Accéder à mon profil">CV</a></li>
                     <li><a href="projets.html" title="Voir mes réalisations">Réalisations</a></li>
                     <li><a href="contact.html" title="Contactez-moi">Contact</a></li>
-                    <li><a href="#blog" title="Voir les dernières actualités">Blog</a></li>
+                    <li><a href="blog.html" title="Voir les dernières actualités">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,19 +35,22 @@
         </div>
         <nav class="smartphone-nav">
             <ul class="flex-container">
-                <li class="flex-item">
-                    <a href="#me" title="Accéder à mon profil">CV</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#proj" title="Voir mes réalisations">Réalisations</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#contact" title="Contactez-moi">Contact</a>
-                </li>
-                <li class="flex-item">
-                    <a href="#blog" title="Voir les dernières actualités">Blog</a>
-                </li>
-            </ul>
+				<li class="flex-item">
+					<a href="index.html" title="Retour à l'accueil">Accueil</a>
+				</li>
+				<li class="flex-item">
+					<a href="bio.html" title="Accéder à mon profil">CV</a>
+				</li>
+				<li class="flex-item">
+					<a href="projets.html" title="Voir mes réalisations">Réalisations</a>
+				</li>
+				<li class="flex-item">
+					<a href="contact.html" title="Contactez-moi">Contact</a>
+				</li>
+				<li class="flex-item">
+					<a href="blog.html" title="Voir les dernières actualités">Blog</a>
+				</li>
+			</ul>
         </nav>
 
         <section class="container box-center">
@@ -118,7 +121,6 @@
         <script type="text/javascript" src="js/scrollfix.js"></script>
         <script type="text/javascript" src="js/venobox.min.js"></script>
         <script type="text/javascript" src="js/philter.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
         <script type="text/javascript">
 
@@ -130,22 +132,6 @@
             $("#phone-button").click(function () {
                 $(".smartphone-nav").slideToggle("slow");
             });
-
-//            $('.ml3').each(function () {
-//                $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-//            });
-//
-//
-//            anime.timeline({loop: 1})
-//                .add({
-//                    targets: '.ml3 .letter',
-//                    opacity: [0, 1],
-//                    easing: "easeInOutQuad",
-//                    duration: 2250,
-//                    delay: function (el, i) {
-//                        return 150 * (i + 1);
-//                    }
-//                });
 
             new Philter({
                 transitionTime: 0.3,
